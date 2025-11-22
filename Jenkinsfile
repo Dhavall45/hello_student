@@ -28,7 +28,7 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                sh 'docker run -d -p 5000:5000 --name student_app python_hello_student:latest'
+                sh 'docker run -d -p 5000:5000 --name student_app hello_student:latest'
             }
         }
 
